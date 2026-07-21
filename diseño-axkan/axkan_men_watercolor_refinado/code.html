@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AXKAN - Comida Rápida Gourmet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Bricolage+Grotesque:opsz,wght@12..96,400&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#f8d7d5",
+                        "surface-container-low": "#fff0f1",
+                        "background": "#ffffff",
+                        "primary-fixed": "#f8d7d5",
+                        "surface-variant": "#fadbde",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#005313",
+                        "inverse-primary": "#ffb2be",
+                        "on-error": "#ffffff",
+                        "on-background": "#28171a",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#5b3f43",
+                        "secondary-container": "#91f78e",
+                        "on-secondary-fixed": "#002204",
+                        "secondary": "#006e1c",
+                        "tertiary": "#006a34",
+                        "surface-bright": "#fff8f7",
+                        "tertiary-fixed-dim": "#6ddd8e",
+                        "surface-container-high": "#ffe1e4",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#f1d3d6",
+                        "tertiary-fixed": "#89faa8",
+                        "on-tertiary-fixed": "#00210c",
+                        "on-tertiary-container": "#f6fff3",
+                        "surface": "#ffffff",
+                        "tertiary-container": "#008644",
+                        "on-surface": "#28171a",
+                        "on-primary-fixed-variant": "#900038",
+                        "secondary-fixed-dim": "#78dc77",
+                        "secondary-fixed": "#94f990",
+                        "inverse-surface": "#3e2b2e",
+                        "surface-container": "#ffffff",
+                        "primary": "#c42114",
+                        "on-primary-fixed": "#400014",
+                        "on-tertiary-fixed-variant": "#005227",
+                        "on-secondary-container": "#00731e",
+                        "surface-container-highest": "#fadbde",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb2be",
+                        "on-secondary": "#ffffff",
+                        "outline": "#8f6f73",
+                        "inverse-on-surface": "#ffecee",
+                        "surface-tint": "#bc004b",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#e4bdc2",
+                        "whatsapp": "#25D366"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "card-padding": "1rem",
+                        "section-gap": "2.5rem",
+                        "gutter": "1rem",
+                        "container-margin": "1.5rem",
+                        "chip-gap": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "accent-script": ["Bricolage Grotesque"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Bebas Neue"],
+                        "display-lg": ["Bebas Neue"]
+                    },
+                    "fontSize": {
+                        "accent-script": ["24px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="text-on-background font-body-md antialiased pb-24 bg-white" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGIWettd6lJe2isEeFGfDcTEqzS0EOmDKPl_OqHkbad5L5wKOzTcNqxGXW6ZPKA6arxLkJOX7af2qczg1fkSJdXrxh89iHNB9D_JDZulr4enBQJr8ZgUEKAqm0QFTLyyTVFYx1iT757e7SpfHaOkhtZP7ozjBI2EfBYTmmny1ERK8TJGfojlHzE7aV9hrJLFN8RQEzGa2QYHLVFFQbjpcOniKlTWcMvE9i4-yI8J2lt7SeOJ_DFlF66gUASO04qV9wbNk'); background-size: cover; background-attachment: fixed; background-position: center;">
+<!-- TopAppBar -->
+<header class="flex justify-center items-center py-6 w-full max-w-7xl mx-auto z-50">
+<img alt="AXKAN Logo" class="h-40 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq6_8J_aIN8jO-piV6Fe0BRfpHM3vCq3gZHjCeZ6USPzJveDKEgtRGFHLH7cHP9KXfRqOz1oyWeff-1NKpXNRtVv9UNW1OgK6rcyuzU6VzgYeeBVgPkT5pAviJ3LQq8CzDHA_DWOKD3cMRQ0RX-1Ad9Zdzo3FCOJZQDSoQ8QGhyGvyxw1p0UP9N8PRCgPLNWamV-IME7tmv9G4U8pgk10c9Tg2NPVD9Ow-oqE0spXFn4kKoJLIL9iV6xp6cecFk1Fc6OU"/>
+</header>
+<!-- Sticky Category Scroll -->
+<div class="sticky top-0 z-40 py-3 px-container-margin -mx-container-margin pl-container-margin overflow-x-auto no-scrollbar">
+<div class="flex gap-chip-gap w-max">
+<a class="flex items-center gap-2 px-5 py-2.5 rounded-full font-label-sm text-label-sm uppercase border border-primary/20 bg-primary text-white" href="#alitas">
+<span class="material-symbols-outlined text-[18px]">set_meal</span>
+                Alitas
+            </a>
+<a class="flex items-center gap-2 bg-surface-container text-on-surface-variant px-5 py-2.5 rounded-full font-label-sm text-label-sm uppercase border border-outline-variant/30" href="#hamburguesas">
+<span class="material-symbols-outlined text-[18px]">lunch_dining</span>
+                Burgers
+            </a>
+<a class="flex items-center gap-2 bg-surface-container text-on-surface-variant px-5 py-2.5 rounded-full font-label-sm text-label-sm uppercase border border-outline-variant/30" href="#hotdogs">
+<span class="material-symbols-outlined text-[18px]">hot_tub</span>
+                Hot Dogs
+            </a>
+<a class="flex items-center gap-2 bg-surface-container text-on-surface-variant px-5 py-2.5 rounded-full font-label-sm text-label-sm uppercase border border-outline-variant/30" href="#snacks">
+<span class="material-symbols-outlined text-[18px]">bakery_dining</span>
+                Snacks
+            </a>
+<a class="flex items-center gap-2 bg-surface-container text-on-surface-variant px-5 py-2.5 rounded-full font-label-sm text-label-sm uppercase border border-outline-variant/30" href="#bebidas">
+<span class="material-symbols-outlined text-[18px]">local_bar</span>
+                Bebidas
+            </a>
+</div>
+</div>
+<!-- Main Content: Menu Items -->
+<main class="px-container-margin py-section-gap space-y-section-gap relative" id="menu">
+<!-- Section: Alitas -->
+<section class="scroll-mt-[100px]" id="alitas">
+<div class="flex items-center gap-3 mb-6 border-b-2 border-primary pb-2">
+<h3 class="font-headline-md text-headline-md text-primary m-0">ALITAS</h3>
+<span class="material-symbols-outlined text-primary text-3xl">set_meal</span>
+</div>
+<div class="space-y-4">
+<!-- Card 1 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/20 flex flex-col">
+<div class="h-56 w-full bg-surface-variant relative">
+<img class="w-full h-full object-cover" data-alt="A close-up, appetizing photo of a 10-piece order of glazed chicken wings in a black bowl. The wings are glossy with sauce. Vibrant, bright, restaurant-quality lighting. Colorful watercolor splashes in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkykHsXlCNrvqzdShTVKhMT1vJz_x9iWBRCP3-80YXqI7d0iZMWQDqfLQ5B4wOe4cdcxdSeN3rvx5Vwjo16nIsF0rakFcYyxn5k_LD6BsUtMwvh00R0ubh0jdAY_0ugWD0g4mPfHvC0GEx1cElK8AFIJy-Ej1R-TdnCHtKJxQM-JAz-cG7EqhOJb2TYj6wypA9q52xbPnPj2wLj-0IE5AVHw6HW4rLNP0J3b59ssPwQJz5Roa6np9jNg"/>
+</div>
+<div class="p-card-padding">
+<h4 class="font-headline-md text-[28px] text-on-surface mb-2">Axkan (10 piezas)</h4>
+<p class="font-body-md text-on-surface-variant text-base">Crujientes alitas con nuestra receta especial. Elige tu salsa favorita.</p>
+</div>
+</div>
+<!-- Sabores Widget -->
+<div class="bg-primary-container/30 rounded-2xl p-5 border border-primary/20">
+<h5 class="font-label-sm text-label-sm uppercase text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">local_fire_department</span>
+                        Elige tu Sabor
+                    </h5>
+<div class="flex flex-wrap gap-2.5">
+<span class="bg-white text-on-surface px-4 py-2 rounded-full text-sm font-bold shadow-sm">Piña/Habanero <span class="text-error">🌶️🌶️</span></span>
+<span class="bg-white text-on-surface px-4 py-2 rounded-full text-sm font-bold shadow-sm">Habanero <span class="text-error">🌶️🌶️🌶️</span></span>
+<span class="bg-white text-on-surface px-4 py-2 rounded-full text-sm font-bold shadow-sm">BBQ / Chipotle</span>
+<span class="bg-white text-on-surface px-4 py-2 rounded-full text-sm font-bold shadow-sm">Bufalo</span>
+<span class="bg-white text-on-surface px-4 py-2 rounded-full text-sm font-bold shadow-sm">Natural</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Hamburguesas -->
+<section class="scroll-mt-[100px]" id="hamburguesas">
+<div class="flex items-center gap-3 mb-6 border-b-2 border-primary pb-2">
+<h3 class="font-headline-md text-headline-md text-primary m-0">HAMBURGUESAS</h3>
+<span class="material-symbols-outlined text-primary text-3xl">lunch_dining</span>
+</div>
+<div class="space-y-4">
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/20 flex flex-row h-36">
+<div class="w-2/5 bg-surface-variant relative shrink-0">
+<img class="w-full h-full object-cover" data-alt="A mouth-watering, high-quality image of a large burger with melted cheese, lettuce, and a glossy bun. Isolated against a clean, light background with subtle artistic watercolor splashes. High key lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_M07CweYWFlQqHQhShGFEjSimQGAvSxt3Vl3PaIWRB4zi0uJFLBaRmgTk46ASIWiZ6Q_nXeTTwwqas0HhaPqj5dPWsPqQn33k8Hnj8Igy6lXCqCEEVkSOYheULglC--rWl1fxK6vW1mIs5Zc2nD0XEVumJ9q486kgcCnV7JczjTdFM9pVSPvKxc774MYQvXw8__mt-KwzmVP0CItDDA6vQtzXDggEy64ysL13uHi6qjGb5kvTPPicAQ"/>
+</div>
+<div class="p-5 flex flex-col justify-center w-full">
+<h4 class="font-headline-md text-[26px] text-on-surface mb-2 leading-none">Sencilla</h4>
+<p class="font-body-md text-on-surface-variant text-sm line-clamp-2">Carne de res, lechuga, tomate, cebolla.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Responsible Drinking Note -->
+<div class="mt-8 p-4 bg-primary-container/20 rounded-xl text-center">
+<p class="font-label-sm text-[11px] uppercase text-primary tracking-widest flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">info</span>
+                El consumo excesivo de alcohol es perjudicial para la salud.
+            </p>
+</div>
+</main>
+<!-- Floating Action Button (WhatsApp) -->
+<button class="fixed bottom-24 right-4 bg-whatsapp text-white p-4 rounded-full shadow-lg z-40 hover:scale-105 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="bg-white border-t border-outline-variant/20 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] fixed bottom-0 w-full flex justify-around items-center px-4 py-2 overflow-x-auto gap-chip-gap z-50">
+<a class="flex flex-col items-center justify-center rounded-xl px-4 py-2 active:bg-primary-container bg-primary text-white" href="#alitas">
+<span class="material-symbols-outlined mb-1">set_meal</span>
+<span class="font-label-sm text-[10px] uppercase">Alitas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 px-4 py-2 active:bg-primary-container/20" href="#hamburguesas">
+<span class="material-symbols-outlined mb-1">lunch_dining</span>
+<span class="font-label-sm text-[10px] uppercase">Burgers</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 px-4 py-2 active:bg-primary-container/20" href="#hotdogs">
+<span class="material-symbols-outlined mb-1">hot_tub</span>
+<span class="font-label-sm text-[10px] uppercase">Hot Dogs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 px-4 py-2 active:bg-primary-container/20" href="#snacks">
+<span class="material-symbols-outlined mb-1">bakery_dining</span>
+<span class="font-label-sm text-[10px] uppercase">Snacks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 px-4 py-2 active:bg-primary-container/20" href="#bebidas">
+<span class="material-symbols-outlined mb-1">local_bar</span>
+<span class="font-label-sm text-[10px] uppercase">Bebidas</span>
+</a>
+</nav>
+</body></html>

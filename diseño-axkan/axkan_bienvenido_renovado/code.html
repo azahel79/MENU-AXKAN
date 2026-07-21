@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AXKAN Gourmet - Sabor que se siente</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Epilogue:wght@500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "outline-variant": "#e5beb7",
+                "on-primary": "#ffffff",
+                "surface-container": "#f0eee9",
+                "surface-container-highest": "#e4e2dd",
+                "primary": "#9f0100",
+                "on-tertiary": "#ffffff",
+                "outline": "#906f6a",
+                "surface": "#fbf9f4",
+                "on-surface": "#1b1c19",
+                "on-primary-fixed": "#410000",
+                "inverse-surface": "#30312e",
+                "surface-tint": "#bb190e",
+                "secondary": "#3b6934",
+                "secondary-container": "#b9eeab",
+                "tertiary-fixed": "#ffddb5",
+                "surface-variant": "#e4e2dd",
+                "secondary-fixed": "#bcf0ae",
+                "inverse-primary": "#ffb4a8",
+                "secondary-fixed-dim": "#a1d494",
+                "on-primary-container": "#ffdad4",
+                "on-background": "#1b1c19",
+                "on-primary-fixed-variant": "#930100",
+                "on-secondary-fixed-variant": "#23501e",
+                "error-container": "#ffdad6",
+                "primary-fixed-dim": "#ffb4a8",
+                "surface-container-high": "#eae8e3",
+                "tertiary": "#6c4400",
+                "primary-container": "#c42114",
+                "on-tertiary-container": "#ffddb6",
+                "inverse-on-surface": "#f2f1ec",
+                "surface-dim": "#dbdad5",
+                "primary-fixed": "#ffdad4",
+                "on-error-container": "#93000a",
+                "tertiary-container": "#8c5a00",
+                "tertiary-fixed-dim": "#ffb958",
+                "on-error": "#ffffff",
+                "on-secondary": "#ffffff",
+                "surface-bright": "#fbf9f4",
+                "on-tertiary-fixed-variant": "#643f00",
+                "on-surface-variant": "#5c403b",
+                "on-secondary-fixed": "#002201",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-container": "#3f6d38",
+                "error": "#ba1a1a",
+                "background": "#fbf9f4",
+                "surface-container-low": "#f5f3ee",
+                "on-tertiary-fixed": "#2a1800"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "max-width": "1280px",
+                "gutter": "24px",
+                "margin-desktop": "64px",
+                "base": "8px",
+                "margin-mobile": "20px"
+        },
+        "fontFamily": {
+                "display-lg-mobile": [
+                        "Epilogue"
+                ],
+                "display-lg": [
+                        "Epilogue"
+                ],
+                "headline-md": [
+                        "Epilogue"
+                ],
+                "headline-sm": [
+                        "Epilogue"
+                ],
+                "body-lg": [
+                        "Be Vietnam Pro"
+                ],
+                "label-caps": [
+                        "Space Grotesk"
+                ],
+                "body-md": [
+                        "Be Vietnam Pro"
+                ]
+        },
+        "fontSize": {
+                "display-lg-mobile": [
+                        "36px",
+                        {
+                                "lineHeight": "42px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-caps": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+    .watercolor-bg {
+        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEVmZk_ibR3PpJQmy1OtU4XrcVAVxrlDUqp2hv2PAkoEPRdGzs9Ax5MtaHL3A-yaifeTpXtT_FIC2LXJRN4EXuaBokkG_9PDnnsV9Y---ZAaM4218rPNgM0Me8CYbP4AzhZR6pKBpkDqk-FbHIzVSX3E0cGamTltQYJYkFVYatyUUh8m67I1x4U456ypatYNeE2MhJDqg4CzcUfFhpKnxaTUJIbpbVo2lCIquh6fajVOTzJPIcgalJEFlKkNWDy0j7Fdc');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased watercolor-bg relative">
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center px-margin-mobile pt-8 pb-32 max-w-lg mx-auto w-full relative z-10">
+<!-- Logo Section -->
+<div class="mb-10 w-48 h-48 rounded-full bg-white/80 backdrop-blur-sm p-4 shadow-[0_8px_30px_rgba(159,1,0,0.1)] flex items-center justify-center">
+<img alt="AXKAN Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjjuA2eziAMqmJbasBaybY4A-EPnk7bOgMsqzKaedtopbho8vGfl9RqUBpamG9ZRfqBvGptnVT2bPO3fe0tvnUnprqtfiVN_Kxk8tAtnByoTlvPQB9Pl0D_R-y2DPzqzlEC695QI-KT57PBiEiw6PqqNibBwATE7RBJkCprf3CsyG1HEEMKBFQhEdblEQxuE8KzQl9lSokCkAh7HPCHCYN22hsFAyxFUTL2aOsURvMUkQIKzShctcYqRxbLGdd5lm0LJc"/>
+</div>
+<!-- Hero Text -->
+<div class="text-center mb-8 space-y-4">
+<h1 class="font-display-lg-mobile text-on-background">
+                SABOR QUE SE <br/>
+<span class="text-primary relative inline-block">
+                    SIENTE
+                    <svg class="absolute w-full h-3 -bottom-1 left-0 text-secondary opacity-50" preserveaspectratio="none" viewbox="0 0 100 10">
+<path d="M0,5 Q50,15 100,5" fill="transparent" stroke="currentColor" stroke-width="3"></path>
+</svg>
+</span>
+</h1>
+<p class="font-body-md text-on-surface-variant px-4">
+                Comida Rápida Gourmet. Ingredientes frescos, sabores únicos y hechos al momento.
+            </p>
+</div>
+<!-- Call to Action -->
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-label-caps text-lg shadow-[0_8px_20px_rgba(159,1,0,0.2)] hover:bg-primary-container hover:text-on-primary-container transition-all active:scale-95 flex items-center justify-center gap-2 mb-12">
+            VER MENÚ
+            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<!-- Featured Categories Chips -->
+<div class="w-full">
+<p class="text-center font-label-caps text-on-surface-variant mb-6 text-sm tracking-widest">DESCUBRE</p>
+<div class="flex justify-center gap-4 sm:gap-6 flex-wrap">
+<!-- Chip 1 -->
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-surface-container shadow-sm border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 28px;">restaurant_menu</span>
+</div>
+<span class="font-label-caps text-xs text-on-surface">ALITAS</span>
+</div>
+<!-- Chip 2 -->
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-surface-container shadow-sm border border-outline-variant/30 flex items-center justify-center text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 28px;">lunch_dining</span>
+</div>
+<span class="font-label-caps text-xs text-on-surface">BURGERS</span>
+</div>
+<!-- Chip 3 -->
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-surface-container shadow-sm border border-outline-variant/30 flex items-center justify-center text-tertiary group-hover:bg-tertiary-container group-hover:text-on-tertiary-container transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 28px;">bakery_dining</span>
+</div>
+<span class="font-label-caps text-xs text-on-surface">SNACKS</span>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Suppressed for Landing Page as per guidelines) -->
+<!-- The prompt asks for a welcome/landing screen, which is a linear entry point. Navigation shell should be suppressed. -->
+</body></html>
