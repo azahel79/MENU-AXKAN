@@ -23,9 +23,9 @@ export default function CategoryDetail({ section }: { section: MenuSection }) {
   return (
     <main className={"detail-page category-detail-page theme-" + section.theme}>
       <header className="detail-header">
-        <Link href="/menu" className="back-button" aria-label="Volver al menú">
+        <a href="/menu" className="back-button" aria-label="Volver al menú">
           <FiArrowLeft aria-hidden="true" />
-        </Link>
+        </a>
         <Link href="/" className="detail-logo">
           <Image src="/axkan/logo-global-actualizado.png" alt="AXKAN" width={180} height={180} />
         </Link>
@@ -91,6 +91,7 @@ export default function CategoryDetail({ section }: { section: MenuSection }) {
                   <Link
                     className="detail-list-item"
                     href={`/menu/${section.id}/${slugifyProduct(item.name)}`}
+                    scroll={false}
                     aria-label={`Ver información completa de ${item.name}`}
                   >
                     <span className="detail-list-image">

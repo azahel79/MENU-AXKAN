@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { FiArrowLeft, FiCheck, FiChevronRight, FiInfo } from "react-icons/fi";
 import type { MenuItem, MenuSection } from "../menu-data";
 import { getProductInsight, slugifyProduct } from "../product-details";
@@ -28,8 +28,12 @@ export default function ProductDetail({
     (_, index) => section.images[(index + itemIndex) % section.images.length],
   );
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "auto" });
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    const previousBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    root.style.scrollBehavior = previousBehavior;
   }, [item.name]);
 
   return (
@@ -41,11 +45,9 @@ export default function ProductDetail({
       transition={{ duration: reduceMotion ? 0 : 0.28 }}
     >
       <header className="detail-header">
-        <motion.div whileTap={reduceMotion ? undefined : { scale: 0.92 }}>
-          <Link href="/menu" className="back-button" aria-label={`Volver a ${section.title}`}>
+        <a href="/menu" className="back-button" aria-label="Volver al menú">
             <FiArrowLeft aria-hidden="true" />
-          </Link>
-        </motion.div>
+          </a>
         <Link href="/" className="detail-logo">
           <Image src="/axkan/logo-global-actualizado.png" alt="AXKAN" width={180} height={180} />
         </Link>
@@ -141,6 +143,7 @@ export default function ProductDetail({
                   <Link
                     className="detail-list-item related-product-card"
                     href={`/menu/${section.id}/${slugifyProduct(relatedItem.name)}`}
+                  scroll={false}
                   >
                     <span className="detail-list-image">
                       <Image

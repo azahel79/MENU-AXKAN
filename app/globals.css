@@ -1941,8 +1941,14 @@ number-flow {
 
 /* Botón de regreso global al menú. */
 .back-button {
+  z-index: 100;
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: #fffdf9;
   background: rgba(12, 12, 11, 0.94);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
 }
+
+.detail-logo { z-index: 20; }
