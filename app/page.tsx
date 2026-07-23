@@ -12,7 +12,7 @@ export default function WelcomePage() {
     <main className="landing-page">
       <div className="landing-inner">
         <div className="landing-logo-wrap">
-          <Image src="/axkan/logo-transparente.png" alt="AXKAN Comida Rápida Gourmet" width={500} height={500} priority />
+          <Image src="/axkan/logo-global-actualizado.png" alt="AXKAN Comida Rápida Gourmet" width={500} height={500} priority />
         </div>
 
         <section className="landing-copy">

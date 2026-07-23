@@ -37,7 +37,7 @@ export default function MenuPage() {
     <main className="menu-page visual-menu-page">
       <header className="menu-logo-header">
         <Link href="/" aria-label="Volver a bienvenida">
-          <Image src="/axkan/logo-transparente.png" alt="AXKAN Comida Rápida Gourmet" width={360} height={360} priority />
+          <Image src="/axkan/logo-global-actualizado.png" alt="AXKAN Comida Rápida Gourmet" width={360} height={360} priority />
         </Link>
         <p>Elige una categoría y descubre todos sus sabores</p>
       </header>
@@ -87,7 +87,7 @@ export default function MenuPage() {
 
         <p className="alcohol-note">ⓘ &nbsp; El consumo excesivo de alcohol es perjudicial para la salud.</p>
         <footer className="menu-footer">
-          <Image src="/axkan/logo-transparente.png" alt="AXKAN" width={190} height={190} />
+          <Image src="/axkan/logo-global-actualizado.png" alt="AXKAN" width={190} height={190} />
           <p>Fresco, rico y hecho para ti</p>
           <span>@axkan.gourmet · Axkan Banderilla · 228 179 8637</span>
         </footer>

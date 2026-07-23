@@ -23,11 +23,11 @@ export default function CategoryDetail({ section }: { section: MenuSection }) {
   return (
     <main className={"detail-page category-detail-page theme-" + section.theme}>
       <header className="detail-header">
-        <Link href={"/menu#" + section.id} className="back-button" aria-label="Volver al menú">
+        <Link href="/menu" className="back-button" aria-label="Volver al menú">
           <FiArrowLeft aria-hidden="true" />
         </Link>
         <Link href="/" className="detail-logo">
-          <Image src="/axkan/logo-transparente.png" alt="AXKAN" width={180} height={180} />
+          <Image src="/axkan/logo-global-actualizado.png" alt="AXKAN" width={180} height={180} />
         </Link>
       </header>
 

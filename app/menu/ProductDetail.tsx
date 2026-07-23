@@ -42,12 +42,12 @@ export default function ProductDetail({
     >
       <header className="detail-header">
         <motion.div whileTap={reduceMotion ? undefined : { scale: 0.92 }}>
-          <Link href={`/menu/${section.id}`} className="back-button" aria-label={`Volver a ${section.title}`}>
+          <Link href="/menu" className="back-button" aria-label={`Volver a ${section.title}`}>
             <FiArrowLeft aria-hidden="true" />
           </Link>
         </motion.div>
         <Link href="/" className="detail-logo">
-          <Image src="/axkan/logo-transparente.png" alt="AXKAN" width={180} height={180} />
+          <Image src="/axkan/logo-global-actualizado.png" alt="AXKAN" width={180} height={180} />
         </Link>
       </header>
 
